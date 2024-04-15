@@ -21,6 +21,33 @@ body {
   background-color: #f3f3f3;
   height: 100vh;
   padding: 2rem;
+  /* background-image: url('img/Bank.jpg');
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+    
+    background-position: center; */
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/building.jpg'); /* Specify your background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1; /* Ensure the background image stays behind other content */
+  /* No blur initially */
+}
+
+/* Blurred background class */
+.background-image.blurred {
+  filter: blur(35px); /* Apply blur effect to the background image */
 }
 
 nav {
@@ -190,7 +217,7 @@ nav {
 
 .summary__value--in,
 .summary__value--interest {
-  color: #66c873;
+  color: #0b4914;
 }
 
 .summary__value--out {
